@@ -1,0 +1,8 @@
+<label>User Name:</label>
+<input class="form-control"
+ [(ngModel)]="usuario.name"
+/>
+<p>{{ usuario.name }}</p>
+<p>Address: {{ usuario.address.street + ' ' + usuario.address.number}}</p>
+<!-- <button class="btn btn-primary" [disabled]="(username==='')" (click)="onReset($event)">Reset User</button> -->
+<button class="btn btn-primary" [disabled]="(usuario.name==='')" (click)="usuario.name=''">Reset User</button>
